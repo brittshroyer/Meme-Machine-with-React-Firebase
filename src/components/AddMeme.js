@@ -25,6 +25,7 @@ class AddMeme extends Component {
     }).then(data => {
       console.log('saved the url: ', url);
       this.refs.url.value = '';
+      this.context.router.push('/');
     });
   }
   handleChange(e){
